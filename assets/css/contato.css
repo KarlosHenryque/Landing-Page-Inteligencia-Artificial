@@ -1,0 +1,190 @@
+/* Reset de estilos para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos gerais */
+body {
+    background-color: #f0f8ff; /* Azul bem claro para transmitir leveza */
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+.container-cabecalho {
+    background-color: #87cefa; /* Azul sereno */
+    padding: 20px;
+    text-align: center;
+}
+
+.container-cabecalho h3 {
+    color: #fff;
+    font-size: 2.2em; /* Tamanho ajustado para mais destaque */
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Navegação */
+.container-navegacao {
+    background-color: #4682b4; /* Azul mais profundo para contraste */
+    padding: 15px;
+}
+
+.container-navegacao a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin: 0 15px;
+    text-transform: uppercase; /* Letras maiúsculas para um visual mais dinâmico */
+    transition: color 0.3s ease;
+}
+
+.container-navegacao a:hover {
+    color: #f0f8ff; /* Cor mais clara para o hover */
+    text-decoration: underline;
+}
+
+/* Seção de Serviços */
+.container-servicos {
+    background-color: #e6f2ff; /* Fundo suave */
+    padding: 40px;
+}
+
+.container-servicos h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.container-servicos article {
+    background-color: #d1ecff;
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 10px;
+    max-width: 700px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.container-servicos h3 {
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.container-servicos ul, .container-servicos ol {
+    padding-left: 20px;
+}
+
+.container-servicos li {
+    margin: 10px 0;
+}
+
+/* Seção de Contato e Serviços */
+.container-servicos-contactos {
+    background-color: #8cc0e2;
+    padding: 50px;
+}
+
+.container-servicos-contactos h1 {
+    color: #2c3e50;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.botoes-servicos-contactos a {
+    background-color: #4682b4;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.3em;
+    margin: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.botoes-servicos-contactos a:hover {
+    background-color: #5a9bd3;
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    background-color: #87cefa;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Estilo para links de contato sem sublinhado */
+.contato {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #333; /* Define a cor do texto */
+    font-size: 1.2em; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.contato:hover {
+    color: #4682b4; /* Cor de hover se necessário */
+    text-decoration: none; /* Garantir que o link não seja sublinhado mesmo ao passar o mouse */
+}
+
+.email {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #333; /* Define a cor do texto */
+    font-size: 1.2em;  
+}
+
+.email:hover {
+    color: #4682b4; 
+    text-decoration: none;
+}
+/* Ajustes de Responsividade */
+@media (max-width: 768px) {
+    .container-cabecalho h3 {
+        font-size: 1.8em;
+    }
+
+    .container-navegacao a {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+
+    .container-servicos h1, .container-servicos-contactos h1 {
+        font-size: 2em;
+    }
+
+    .botoes-servicos-contactos a {
+        font-size: 1.1em;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-cabecalho h3 {
+        font-size: 1.5em;
+    }
+
+    .container-navegacao a {
+        font-size: 1em;
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container-servicos article {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .botoes-servicos-contactos a {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
